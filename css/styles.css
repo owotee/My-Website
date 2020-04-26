@@ -30,11 +30,12 @@
     border-color: grey;
     border-width: 5px;
     width: 4%;
-    margin: 100px auto;
+    margin: 100px auto 50px;
   }
 
   p {
     line-height: 2;
+    font-size: 20px;
   }
 
   a {
@@ -50,12 +51,12 @@
 
   .my-skills {
     height: 100px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .skill-row {
     width: 50%;
-    margin: 50px auto;
+    margin: 20px auto 50px;
     line-height: 2;
     text-align: left;
   }
@@ -67,7 +68,7 @@
   }
 
   .middle-container {
-    margin: 100px 0;
+    margin: 50px 0 100px;
   }
 
   .bottom-container {
@@ -103,6 +104,10 @@
     bottom: 300px;
   }
 
+  .mountain-img{
+
+  }
+
   .skill-img1 {
     width: 20%;
     float: left;
@@ -117,7 +122,7 @@
 
   .dp {
     width: 180px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 30px;
   }
 
