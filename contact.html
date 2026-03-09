@@ -1,3 +1,5 @@
+<!--
+
 <link rel="stylesheet" href="css/styles.css">
 
 <hr>
@@ -23,3 +25,217 @@
 
   </form>
 </div>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #eef9f8 0%, #f8fcfc 100%);
+      color: #40514E;
+      min-height: 100vh;
+    }
+
+    .contact-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 760px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 50px 40px;
+      box-shadow: 0 20px 50px rgba(64, 81, 78, 0.12);
+      border: 1px solid rgba(102, 191, 191, 0.16);
+    }
+
+    .contact-top {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-top .dots {
+      letter-spacing: 6px;
+      color: #999;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .contact-top h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      color: #66BFBF;
+      font-weight: 700;
+    }
+
+    .contact-top p {
+      margin: 0;
+      font-size: 1rem;
+      color: #6c7a7a;
+      line-height: 1.7;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #40514E;
+      font-size: 0.98rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #dceeee;
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      background: #fbffff;
+      color: #40514E;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #66BFBF;
+      box-shadow: 0 0 0 4px rgba(102, 191, 191, 0.12);
+      transform: translateY(-1px);
+    }
+
+    .contact-form textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .submit-wrap {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .modern-btn {
+      background: linear-gradient(135deg, #66BFBF, #11999E);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 16px 34px;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      box-shadow: 0 12px 24px rgba(17, 153, 158, 0.22);
+      transition: all 0.25s ease;
+    }
+
+    .modern-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(17, 153, 158, 0.28);
+    }
+
+    .modern-btn:active {
+      transform: translateY(0);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 28px;
+      text-decoration: none;
+      color: #11999E;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #0f7f83;
+    }
+
+    @media (max-width: 768px) {
+      .contact-card {
+        padding: 32px 22px;
+        border-radius: 18px;
+      }
+
+      .contact-top h1 {
+        font-size: 1.8rem;
+      }
+
+      .contact-top p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-page">
+    <div class="contact-card">
+      <a class="back-link" href="index.html">← Back to Home</a>
+
+      <div class="contact-top">
+        <div class="dots">•••••••</div>
+        <h1>Contact Me</h1>
+        <p>
+          Have a project in mind, want to collaborate, or just want to say hello?
+          Send me a message and I’ll get back to you.
+        </p>
+      </div>
+
+      <form class="contact-form" action="http://18.219.84.18:5000/contact" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="Your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" name="phone" placeholder="Your phone number">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <div class="submit-wrap">
+          <button class="modern-btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
