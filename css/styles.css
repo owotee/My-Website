@@ -88,9 +88,35 @@
   }
 
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #66BFBF;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
 
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
 
+.navbar a:hover {
+  color: #EAF6F6;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+}
 
   .contact-form {
     width: 50%;
@@ -119,7 +145,20 @@
   }
 
 
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
 
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
 
 
   
