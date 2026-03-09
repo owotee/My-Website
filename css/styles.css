@@ -87,6 +87,42 @@
     margin: auto;
   }
 
+
+
+
+
+
+  .contact-form {
+    width: 50%;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #40514E;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #EAF6F6;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+
+
+
+
+
+  
   .contact-message {
     width: 40%;
     margin: 40px auto 60px;
